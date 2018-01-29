@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
-    "_comment":"Scripts are run with 'npm run ...' from the console. Parallel scripts allow multiple scripts to be launched at the same time",
-    "prestart": "node buildScripts/startMessage.js",
+    "__comment":"Scripts are run with 'npm run ...' from the console. Parallel scripts allow multiple scripts to be launched at the same time. Babel-node trans between ES versions",
+    "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "node buildScripts/srcServer.js",
+    "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel"
