@@ -17,6 +17,9 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
+// As it's no issue writing to console when building, we will disable linting here:
+/* eslint-disable no-console */
+
 const port = 3000;
 const app = express();
 const compiler = webpack(config);

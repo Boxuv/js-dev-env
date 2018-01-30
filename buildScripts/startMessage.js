@@ -6,4 +6,4 @@
 //ES 6:
 import chalk from 'chalk';
 
-console.log(chalk.green('Starting up the app in DEV MODE'));
+console.log(chalk.green('Starting up the app in DEV MODE')); // eslint-disable-line no-console
